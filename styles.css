@@ -1,0 +1,247 @@
+﻿/* GLOBAL STYLES */
+
+*{
+	box-sizing:border-box;
+}
+
+.div_container {
+								max-width: 1440px;
+								height: auto;
+								margin: auto;
+								background-color: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+								padding:auto;
+}
+
+.div_background {display:grid;
+								background-image: url(images/bg-pattern-desktop.svg);
+								grid-template-columns: minmax(auto,1.4fr) minmax(auto,1fr);
+								grid-template-areas: "logo image"
+											"content image"
+											". image";
+								grid-gap:0%;
+}
+
+/*LOCAL STYLES */
+.div_logo{
+						grid-area: logo;
+						margin: 5% 20% 5% 20%;
+}
+
+.div_picture{grid-area: image;
+							padding:0;
+							margin:0;
+							max-width: 100%;
+}
+
+.div_content{
+						grid-area: content;
+						display: grid;
+						grid-template-columns:  1fr;
+						grid-template-areas: "heading"
+																"text"
+																"input";
+						margin: 0% 20% 10% 20%;
+						max-width: 100%;
+}
+
+.div_heading{
+						grid-area:heading;
+						margin: 0% 5% 5% 0%;
+						height: 320px;
+}
+
+
+.div_text{
+						grid-area:text;
+						line-height: 30px;
+}
+
+.div_input_button{
+						grid-area:input;
+						margin: 5% 5% 5% 5%;
+						position: relative;
+}
+
+#f_email{
+border-radius: 50px;
+border-width:medium;
+width: 100%;
+padding: 10px;
+color: hsl(0, 36%, 70%);
+border-color: hsl(0, 36%, 70%);
+
+}
+
+.submit_button{
+	border-radius: 50px;
+	background-image: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+	color:white;
+	border:none;
+	width: 20%;
+	padding-top:8px  ;
+	padding-bottom:8px ;
+	position: absolute;
+
+	right:0;
+	/*also add a color gradinet*/
+}
+
+.color1{
+	color: hsl(0, 36%, 70%);
+
+}
+
+.color3{
+	color: hsl(0, 6%, 24%);
+
+}
+.s_font{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.h1_st{
+			font-weight: 600;
+			font-size: 90px;
+			letter-spacing: 20px;
+}
+
+.h1_span_st{
+			font-weight: 50;
+			letter-spacing: 20px;
+}
+
+.hero_pic{
+	/*max-width: 100%;*/
+}
+@media only screen and (max-width: 375px){
+
+	.div_container {
+									max-width: 375px;
+									height: auto;
+									margin: auto;
+									background-color: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+									padding: 0;
+	}
+
+	.div_background {display:grid;
+									background-image: url(images/bg-pattern-desktop.svg);
+									grid-template-columns: 1fr;
+									grid-template-areas: "logo"
+												"image"
+												"content";
+									height:auto;
+
+	}
+
+	/*LOCAL STYLES */
+	.div_logo{
+							grid-area: logo;
+							margin: 8% 20% 8% 8%;
+
+	}
+
+	.div_picture{grid-area: image;
+								padding:0;
+								margin:auto;
+								max-width: 100%;
+	}
+
+	.div_content{
+							grid-area: content;
+							display: grid;
+							grid-template-columns:  1fr;
+							grid-template-areas: "heading"
+																	"text"
+																	"input";
+							margin: auto;
+							max-width: 100%;
+	}
+
+	.div_heading{
+							grid-area:heading;
+							position: relative;
+							height: 200px;
+	}
+
+
+	.div_text{
+							grid-area:text;
+	}
+
+	.text_st{
+		line-height: 30px;
+		margin: auto;
+		text-align: center;
+		font-size: 13px;
+		padding: 0% 10% 5% 10%;
+	}
+
+	.div_input_button{
+							grid-area:input;
+							margin: auto;
+							position: relative;
+	}
+
+	#f_email{
+	border-radius: 50px;
+	border-width:medium;
+	width: 100%;
+	padding: 10px;
+	color: hsl(0, 36%, 70%);
+	border-color: hsl(0, 36%, 70%);
+
+	}
+
+	.submit_button{
+		border-radius: 50px;
+		background-image: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+		color:white;
+		border:none;
+		width: 20%;
+		padding-top:8px  ;
+		padding-bottom:8px ;
+		position: absolute;
+
+		right:0;
+		/*also add a color gradinet*/
+	}
+
+	.color1{
+		color: hsl(0, 36%, 70%);
+
+	}
+
+	.color3{
+		color: hsl(0, 6%, 24%);
+
+	}
+	.s_font{
+		font-family: 'Josefin Sans', sans-serif;
+	}
+
+	.h1_st{
+				font-weight: 600;
+				font-size: 40px;
+				letter-spacing: 20px;
+				text-align: center;
+				margin:auto;
+				position: absolute;
+				top:30%;
+				left:11%;
+	}
+
+	.h1_span_st{
+				font-weight: 50;
+				letter-spacing: 20px;
+	}
+
+	.hero_pic{
+		max-width: 100%;
+		margin: auto;
+	}
+
+	.logo_img{
+		max-width: 40%;
+	}
+
+}/*close media quiery*/
